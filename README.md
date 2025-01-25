@@ -19,3 +19,7 @@
   2. **Install Docker** : `sudo yum install docker`
   3. **When docker installed I have to start docker Daemon** : `sudo service docker start`
   4. **I want to run docker command without using sudo . I will add user to Docker group**: `sudo usermod -aG docker $USER` . After running this command user may not add to docker group yet . I need to exit and login again 
+
+## Jenkins and AWS
+### Connect to EC2 server instance from Jenkins server via ssh (ssh agent)
+1. **Install SSH agent plugin from Jenkins** : `Go to Manage -> Plugin -> SSH agent` This plugin allow me to use SSH credentials of the EC2 server to SSH into my instance 
