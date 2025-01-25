@@ -14,5 +14,8 @@
      - **-i**: This flag will take the pem file as a parameter
      - **ec2-user**: I need to ssh to instance as a ec2 user not as a root user 
     
-
 ## Install Docker
+  1. **Update the Package Managet**: `sudo yum update`
+  2. **Install Docker** : `sudo yum install docker`
+  3. **When docker installed I have to start docker Daemon** : `sudo service docker start`
+  4. **I want to run docker command without using sudo . I will add user to Docker group**: `sudo usermod -aG docker $USER` . After running this command user may not add to docker group yet . I need to exit and login again 
